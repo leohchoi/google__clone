@@ -23,7 +23,7 @@ const SearchHeader = () => {
   }
   return (
     <header className='sticky top-0 bg-white'>
-      <div className='flex w-full p-6 items-center'>
+      <div className='flex w-full p-6 items-center justify-between'>
         <Image 
           src={Logo}
           width={120}
@@ -51,7 +51,7 @@ const SearchHeader = () => {
 
           <button hidden type='submit' onClick={search}>Search</button>
         </form>
-        <Avatar className='ml-auto' />
+        <Avatar className='right-1' />
       </div>
       <HeaderOptions />
     </header>
