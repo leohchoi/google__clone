@@ -1,6 +1,7 @@
 import React from 'react';
 import Avatar from './Avatar';
-import ProfilePic from './react.svg'
+import ProfilePic from '../img/react.svg'
+
 // import { ViewGridIcon, MicrophoneIcon } from '@heroicons/react/solid'
 
 

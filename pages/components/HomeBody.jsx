@@ -1,12 +1,13 @@
 import React from 'react';
 import { useState } from 'react'
 import { MagnifyingGlassIcon, MicrophoneIcon } from '@heroicons/react/24/solid'
-import Logo from './googleLogo.png'
+import Image from 'next/image'
+import Logo from '../img/googleLogo.png'
 
 // flex grow is where if there is more room in that entire width of the page, take it up
 
 const HomeBody = (props) => {
-  const [search, setSearch] = useState();
+  const [search, setSearch] = useState('');
 
   function handleChange(event) {
     console.log(event)
@@ -14,10 +15,10 @@ const HomeBody = (props) => {
   }
   return (
     <form className='flex flex-col items-center justify-center flex-grow w-4/5'>
-      <img 
-        loading='lazy'
-        src={Logo} 
-        alt="google logo" 
+      <Image 
+        src={Logo}
+        width={300}
+        height={100}
         className='logo'
       />
 
